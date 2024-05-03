@@ -1,0 +1,30 @@
+<HTML>
+    <HEAD>
+        <META charset="UTF-8">
+    <TITLE>Practical5.4</TITLE>
+    </HEAD>
+    <BODY>
+    <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+        //let, var - використовується для створення змінних
+      
+       var x = prompt('input x,');
+        if (x > 6 || x < -6) {
+			alert("Недопустиме значення", "Помилка");
+			}
+        else if(x < 0){
+            U =  Math.sin(x) - Math.tan(x);
+            document.write ('Перша умова: U = ', U);
+        }
+        else if(x == 0){
+          U = 0;
+          document.write ('Друга умова: U = ', U);
+        }   
+        else if(x > 0){
+            // U = Math.pow(Math.tan(x),3);
+            ctgx = Math.pow(Math.cos(x) / Math.sin(x),3);
+            U = ctgx;
+            document.write ('Третя умова: U = ', U);
+        }
+    </SCRIPT>
+    </BODY>
+    </HTML>
